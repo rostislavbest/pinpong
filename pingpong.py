@@ -77,3 +77,41 @@ while run:
     fps.tick(130)
     f+=1
     pygame.display.update()
+    le run:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            run = False
+    key = pygame.key.get_pressed()
+    if key[pygame.K_UP] and player.imgrect.top >0:
+        player.imgrect.y -=1
+    if key[pygame.K_DOWN] and player.imgrect.bottom <H:
+        player.imgrect.y += 1
+    ball_move()
+    enemy_move()
+    scr.blit(fon,(0,0))
+    scr.blit(player.img_new,(player.imgrect.x,player.imgrect.y))
+
+    scr.blit(ball.img_new, (ball.imgrect.x, ball.imgrect.y))
+    scr.blit(enemy.img_new, (enemy.imgrect.x, enemy.imgrect.y))
+    fps.tick(130)
+    f+=1
+    pygame.display.update()
+    le run:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            run = False
+    key = pygame.key.get_pressed()
+    if key[pygame.K_UP] and player.imgrect.top >0:
+        player.imgrect.y -=1
+    if key[pygame.K_DOWN] and player.imgrect.bottom <H:
+        player.imgrect.y += 1
+    ball_move()
+    enemy_move()
+    scr.blit(fon,(0,0))
+    scr.blit(player.img_new,(player.imgrect.x,player.imgrect.y))
+
+    scr.blit(ball.img_new, (ball.imgrect.x, ball.imgrect.y))
+    scr.blit(enemy.img_new, (enemy.imgrect.x, enemy.imgrect.y))
+    fps.tick(130)
+    f+=1
+    pygame.display.update()
