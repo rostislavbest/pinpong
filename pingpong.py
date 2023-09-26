@@ -11,7 +11,7 @@ class Player():
         self.img_new = pygame.transform.scale(pygame.image.load(self.img),(self.w,self.h))
         self.imgrect = self.img_new.get_rect(center = (self.x,self.y))
 
-player = Player(50,190,30,175,'platforma.png')
+player = Player(59,190,30,175,'platforma.png')
 enemy = Player(650,190,30,175,'platforma.png')
 ball = Player(330,219,50,50,'ball.png')
 
